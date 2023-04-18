@@ -1,0 +1,38 @@
+h1,p{
+    text-align: center;
+}
+#titulo{
+    background-color: cadetblue;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.container-fluid{
+    background-color:cornflowerblue;
+}
+#buscador{
+    background-color: aquamarine;
+}
+footer{
+    background-color: cyan;
+}
+#informacion{
+    background-color: limegreen;
+}#botones{
+    margin-left: 40%;
+}
+#oculto{
+    display: none;
+    background-color: blueviolet;
+}
+#botonloco{
+    margin-left: 40%;
+}

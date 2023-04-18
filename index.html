@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digivice</title>
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/descarga (1).png" alt="Logo" width="20%" height="24" class="d-inline-block align-text-top">
+                Digivice en tiempo real 
+              </a>
+            </div>
+        </nav>
+    <div id="titulo">
+        <h1>CONSUMO DE API DIGIMON</h1>
+    </div>
+    </header>
+    <tbody>
+    <form action="" method="GET" id="buscador">
+        <label for="nombreProporcionado">¡Busca la información más relevante con solo ingresar el nombre de tu Digimon favorito!:</label>
+        <input type="text" value="" id="nombreProporcionado">
+        <input type="button" value="Consultar Api Digimon" onclick="consultarDigimon()">
+    </form>
+    <br>
+    <div id="informacion" class="container">
+        <div>
+            <p id="nombreDigimon" class="textoDigimon"><===Nombre del Digimon seleccionado///</p>
+        </div>
+        <br>
+        <div>
+        <img id="imagenDigimon" src="" alt="">
+        </div>
+        <br>
+        <div>
+            <p id="nivelDigimon" class="textoDigimon">///Nivel de Habilidad===></p>
+        </div>
+    </div>
+    <div id="botones">
+        <button type="button" class="btn btn-primary btn-lg">información/extra</button>
+        <button type="button" class="btn btn-secondary btn-lg">Dato/curioso</button>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/descarga 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/descarga2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/descarga3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </tbody>
+    <button type="button" id="botonloco" class="btn btn-success">Doble click para ver contenido oculto</button>
+    <div id="oculto">
+        <p>En occidente conocemos que Akiyoshi Hongo es el creador de la franquicia de Digimon, pero en realidad ese nombre no se refiere a una sola persona, sino a varias. Akiyoshi Hongo es un seudónimo creado por Bandai para dirigirse al grupo creativo detrás de Digimon. Este equipo está compuesto por Aki Maita, Hiroshi Izawa y Takeichi Hongo. El nombre público fue creado a partir de los kanjis usados en los nombres de los escritores, para darles el reconocimiento a todos ellos por igual.
+        </p>
+    </div>
+    <div>
+        <h1>LISTA COMPLETA DE DIGIMON</h1>
+    <button onclick="listaDigimon()"> Ver todos los digimones</button>
+
+    <article id="contenedorPadre">
+
+    </article>
+
+    <label for="laListaDigimon">Seleccione un digimon: </label>
+    <select id="laListaDigimon" name="laListaDigimon">
+            <option value="algo">ALGO</option>
+    </select>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados</p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
